@@ -19,6 +19,7 @@ margin: 0px;
 -moz-osx-font-smoothing: grayscale;
 overflow: hidden;
 .bg-col(@grayDk)!important;
+//background: @grayDk linear-gradient(@blue-lt 50%, @gray 50%);
 }
 
 h1, h2, h3, h4 {
@@ -27,7 +28,8 @@ font-weight: normal;
 
 #page {
 position: relative;
-.bg-col(@wht);
+//.bg-col(@gray);
+background: linear-gradient(@blue-lt 50%, @gray 50%);
 height: 100%;
 display: flex;
 flex-direction: column;

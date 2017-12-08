@@ -33,7 +33,7 @@ h4 {
 }
 #page {
   position: relative;
-  background-color: white;
+  background: linear-gradient(#3e606f 50%, #918F8F 50%);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -645,6 +645,186 @@ section.page-section.profile-list .profile:hover .biog:after {
 }
 #location-map {
   height: 350px;
+}
+.breadcrumbs {
+  background-color: #3e606f;
+  padding: 20px 0px;
+  color: white;
+  font-size: 16px;
+  line-height: 16px;
+}
+.breadcrumbs i.fa-angle-right {
+  padding: 0px 10px;
+}
+.breadcrumbs i.fa-home {
+  padding-left: 15px;
+}
+.breadcrumbs a {
+  color: white;
+}
+.tml {
+  padding: 30px;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  max-width: 380px;
+  margin: auto;
+}
+article.page-content {
+  margin: 0px;
+  min-height: 500px;
+  background-color: white;
+}
+article.page-content header.page-title {
+  background-color: #3e606f;
+  padding: 10px 0px 15px 0px;
+  color: white;
+}
+article.page-content header.page-title h1 {
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0px;
+  font-weight: 300;
+}
+article.page-content header.post-header {
+  padding-bottom: 20px;
+}
+article.page-content header.post-header .article-info {
+  font-weight: 700;
+  color: #918F8F;
+}
+article.page-content header.post-header .article-info time {
+  padding-right: 10px;
+}
+article.page-content header.post-header .article-info span {
+  padding: 0px 10px;
+}
+article.page-content header.post-header .article-info a {
+  color: #918F8F;
+}
+article.page-content h2,
+article.page-content h3,
+article.page-content h4 {
+  color: #193441;
+}
+article.page-content h2 {
+  font-size: 40px;
+  line-height: 45px;
+}
+article.page-content h3 {
+  font-size: 30px;
+  line-height: 35px;
+}
+article.page-content h4 {
+  font-size: 20px;
+  line-height: 25px;
+}
+article.page-content p,
+article.page-content ul,
+article.page-content ol {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  color: #4b4b4b;
+}
+article.page-content p:last-child,
+article.page-content ul:last-child,
+article.page-content ol:last-child {
+  margin-bottom: 0px;
+}
+article.page-content .entry {
+  margin: 10px 0px 20px 0px;
+}
+article.page-content .entry img.alignleft,
+article.page-content .entry img.alignright,
+article.page-content .entry img.alignnone {
+  padding: 10px;
+  border: #918F8F 1px solid;
+}
+article.page-content .entry img.alignleft {
+  margin: 0px 20px 20px 0px;
+}
+article.page-content .entry img.alignright {
+  margin: 0px 0px 20px 20px;
+}
+article.page-content .entry img.alignnone {
+  margin-bottom: 20px;
+}
+article.page-content .entry img {
+  max-width: 100%;
+}
+article.page-content #map {
+  margin-top: 25px;
+  height: 350px;
+}
+article.page-content figure.feat-img {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  margin-top: 25px;
+  position: relative;
+}
+article.page-content figure.feat-img img {
+  width: 100%;
+}
+article.page-content figure.feat-img .caption {
+  padding-top: 10px;
+  font-style: italic;
+  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #4b4b4b;
+}
+article.page-content figure.feat-img.post-img {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+article.page-content figure.feat-img.sml-img {
+  width: 50%;
+  float: left;
+  padding: 20px 10px 5px 10px;
+  margin: 0px;
+  height: 112px;
+}
+article.page-content figure.feat-img.sml-img:hover {
+  z-index: 2;
+  cursor: cell;
+}
+article.page-content figure.feat-img.sml-img:hover img {
+  width: 200%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  max-width: none;
+  border: 10px solid white;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+article.page-content .table {
+  margin-top: 15px;
+}
+.post-paging {
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  padding: 20px 0px;
+}
+.post-paging a {
+  color: #193441;
+}
+.post-paging a.prev {
+  float: left!important;
+  float: left;
+  padding-left: 15px;
+}
+.post-paging a.next {
+  float: right!important;
+  float: right;
+  padding-right: 15px;
 }
 /** --------------------------- /
 /* Footer */

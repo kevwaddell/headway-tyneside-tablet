@@ -203,6 +203,13 @@
 		"oAP": "\/inc\/functions\/tablet-theme-init.php",
 		"oF": 0
 		},
+	"\/page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page.php",
+		"oF": 0
+		},
 	"\/parts\/global\/contact-form.php": {
 		"cB": 0,
 		"ft": 8192,

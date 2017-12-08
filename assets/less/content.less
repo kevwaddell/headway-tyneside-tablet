@@ -1,0 +1,182 @@
+.breadcrumbs {
+.bg-col(@blue-lt);
+padding: 20px 0px;	
+color: @wht;
+.font-size(1.6);
+.line-h(1.6);
+	i.fa-angle-right {
+	padding: 0px 10px;	
+	}
+	i.fa-home {
+	padding-left: 15px;	
+	}
+	a {
+	color: @wht;	
+	}
+}
+
+.tml {
+padding: 30px;
+.drop-shadow(0, 3px, 10px, 0.5);
+max-width: 380px;
+margin: auto;	
+}
+
+article.page-content {
+	margin: 0px;
+	min-height: 500px;
+	.bg-col(@wht);
+	header.page-title {
+	.bg-col(@blue-lt);
+	padding: 10px 0px 15px 0px;
+	color: @wht;
+		h1 {
+		.font-size(3);
+		.line-h(3);
+		margin: 0px;
+		font-weight: 300;	
+		}	
+	}
+	
+	header.post-header {
+	padding-bottom: 20px;
+		.article-info {
+		font-weight: 700;
+		color: @gray;
+			time {
+			padding-right: 10px;	
+			}
+			span{
+			padding: 0px 10px;	
+			}
+			a {
+			color: @gray;	
+			}	
+		}	
+	}
+	
+	h2, h3, h4 {
+	color: @blue;	
+	}
+	
+	h2 {
+	.font-size(4);
+	.line-h(4.5);	
+	}
+	
+	h3 {
+	.font-size(3);
+	.line-h(3.5);	
+	}
+	
+	h4 {
+	.font-size(2);
+	.line-h(2.5);	
+	}
+	
+	p, ul, ol {
+	.font-size(1.8);
+	.line-h(2.6);	
+	margin-bottom: 20px;
+	color: @grayDk;
+		&:last-child {
+		margin-bottom: 0px;	
+		}
+	}
+	
+	.entry {
+	margin: 10px 0px 20px 0px;	
+		img.alignleft, img.alignright, img.alignnone {	
+		padding: 10px;
+		border: @gray 1px solid;
+		}
+		
+		img.alignleft {
+		margin: 0px 20px 20px 0px;	
+		}
+		
+		img.alignright {
+		margin: 0px 0px 20px 20px;	
+		}
+		
+		img.alignnone {
+		margin-bottom: 20px;	
+		}
+		
+		img {
+		max-width: 100%;	
+		}
+		
+	}
+	
+	#map {
+	margin-top: 25px;
+	.h(35);	
+	}
+	
+	figure.feat-img {
+	.animated;
+	.fadeInLeft;
+	margin-top: 25px;	
+	position: relative;
+		img {
+		width: 100%;	
+		}
+		.caption {
+		padding-top: 10px;
+		font-style: italic;
+		font-family: @serif-font;	
+		.font-size(1.8);
+		.line-h(2.6);
+		color: @grayDk;
+		}
+		&.post-img {
+		.fadeInRight;	
+		}
+		
+		&.sml-img {
+		width: 50%;
+		float: left;
+		padding: 20px 10px 5px 10px;
+		margin: 0px;
+		.h(11.2);
+			&:hover {
+			z-index: 2;
+			cursor: cell;
+				img {
+				width: 200%;
+				position: absolute;
+				left: -50%;
+				top: -50%;
+				max-width: none;
+				border: 10px solid @wht;
+				.drop-shadow(0, 3px, 10px, 0.5);
+				}
+			}
+			
+		}
+	}
+	
+	.table {
+	margin-top: 15px;	
+	}
+}
+
+.post-paging {
+.font-size(1.6);
+.line-h(1.6);
+.text-center;
+padding: 20px 0px;
+	a {
+	color: @blue;	
+		&.prev {
+		.pull-left;	
+		padding-left: 15px;
+		}
+	
+		&.next {
+		.pull-right;
+		padding-right: 15px;	
+		}
+	}
+}
