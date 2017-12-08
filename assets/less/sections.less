@@ -1,0 +1,298 @@
+section.page-section {
+padding-top: 20px;
+padding-bottom: 20px;
+border-bottom: 1px solid @gray;
+	
+	h2 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	}
+	
+	&.post-grid {
+	overflow: hidden;
+		
+		.grid-item {
+		padding: 20px 20px 20px 170px;
+		margin-bottom: 30px;
+		.drop-shadow(0, 3px, 10px, 0.5);
+		overflow: hidden;	
+		position: relative;
+			@media screen and (orientation: landscape) {
+			padding: 20px 20px 20px 270px;	
+			}
+			a {
+				&:hover, &:active, &:focus {
+					.img {
+					.opacity;	
+					}
+				}	
+			}
+			.img {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			bottom: 0px;
+			.w(15);	
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			.animated;
+			.fadeInDown;
+				@media screen and (orientation: landscape) {
+				.w(25);	
+				}
+			}
+			h3 {
+			.font-size(2);	
+			.line-h(2.2);
+			overflow: hidden;
+			text-overflow: ellipsis;
+			margin-top: 0px;
+				a {
+				color: @blue;	
+				white-space: nowrap;
+				}
+			}
+			time {
+			display: block;
+			font-weight: 700;
+			color: @gray;	
+			}
+			p {
+			margin-bottom: 0px;	
+			.font-size(1.6);
+			.line-h(2.4);
+			}
+		}
+	}
+	
+	&.events-list {
+	overflow: hidden;
+		.grid-item {
+		padding: 20px 100px 20px 120px;
+		margin: 30px 15px;
+		.drop-shadow(0, 3px, 10px, 0.5);
+		position: relative;	
+		overflow: hidden;
+			.calendar-date {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			bottom: 0px;
+			.w(10);
+			.bg-col(@blue);	
+			.animated;
+			.fadeInLeft;
+				span {
+				display: block;
+				.text-center;	
+				}
+				.mth  {
+				color: @wht;
+				.bg-col(@blue-lt);	
+				.text-uppercase;
+				.line-h(3);
+				}
+				.dy {
+				color: @wht;	
+				.font-size(6.5);
+				font-weight: 700;
+				.line-h(8.5);
+				letter-spacing: -0.09em;
+				}
+				.wd {
+				color: lighten(@blue-lt, 20%);
+				.text-uppercase;	
+				.line-h(1.4);
+				}
+			}
+			
+			h3 {
+			.font-size(2);	
+			.line-h(2.2);
+			overflow: hidden;
+			text-overflow: ellipsis;
+			margin-top: 0px;
+				a {
+				color: @blue;	
+				white-space: nowrap;
+				}
+			}
+			span.times {
+			font-weight: 700;
+			color: @gray;	
+			}
+			p {
+			margin-bottom: 0px;	
+			.font-size(1.8);
+			.line-h(2.6);
+			}
+			a.goto-link {
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			margin-top: -20px;
+			.w(4);
+			.h(4);
+			.rounded(100%);
+			.bg-col(@blue);
+			text-decoration: none;
+			color: @wht;
+			.animated;
+			.fadeInRight;
+				i {
+				display: block;
+				.line-h(4);
+				text-align: center;	
+				}
+				&:hover, &:active, &:focus {
+				.bg-col(@blue-lt);
+				}
+			}
+		}
+	}
+	
+	&.profile-list {
+		.profile {
+		padding: 20px 0px;
+		margin: 15px;
+		.drop-shadow(0, 3px, 10px, 0.5);
+		position: relative;
+		max-height: 475px;
+
+			.profile-img {
+			.h(15);
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;	
+			margin: 0px 20px;
+			}	
+			
+			h3.name {
+			padding-left: 20px;
+			padding-right: 20px;	
+			}
+			
+			.role {
+			font-weight: 700;
+			.font-size(1.6);
+			color: @gray;	
+			padding: 0px 20px;
+			}
+			
+			.biog {
+			position: relative;
+			overflow: hidden;
+			.h(19.8);
+			padding: 0px 20px 20px;
+				p {
+				.font-size(1.6);
+				.line-h(2.2);	
+				}
+				&:after {
+				content: "More...";
+				position: absolute;
+				right: 20px;
+				bottom: 0px;
+				padding: 5px;
+				.line-h(1.4);
+				.trans-bg(@grayDk; 0.7);
+				color: @wht;
+				z-index: 2;
+				}	
+			}
+			
+			&:hover {
+			z-index: 2;
+			.drop-shadow(0, 0px, 0px, 0);
+			.bg-col(@gray-lt);
+			cursor: cell;
+				.biog {
+					height: auto;
+					.bg-col(@gray-lt);
+					&:after {
+					display: none;	
+					}		
+				}
+			}
+		}
+	}
+}
+
+#contact-section {
+	
+	textarea {
+	.h(4.6);	
+	transition: 0.3s;
+		&:focus {
+		.h(10);	
+		}
+	}
+	
+	.field-wrap {
+		input.btn {
+		width: 100%;	
+		}
+	}
+	
+	.nf-field-container {
+	margin-bottom: 15px;	
+	}
+	
+	.spam-wrap {
+		.nf-field-element {
+		width: 55%;	
+		}
+		.nf-field-label {
+		width: 45%;	
+		}
+	}
+	
+	.contact-info {
+	margin-top: 10px;
+	.bg-col(@gray-lt);
+	padding: 20px;	
+		h4 {
+		margin-top: 0px;
+		text-transform: uppercase;	
+		}
+		p {
+		.font-size(1.5);
+		.line-h(1.8);	
+			&:last-child {
+			margin-bottom: 0px;	
+			}
+		}
+	}
+}
+
+#help-and-support-section {
+.bg-col(@gray);
+color: @wht;
+border-bottom: none;
+	.get-in-touch-box {
+	margin: 0px 15px;
+	.bg-col(@blue-lt);
+	padding: 50px;	
+	}	
+	h3 {
+	.font-size(4);
+	.line-h(4);	
+	margin-bottom: 20px;
+	margin-top: 0px;
+	}
+	.btn {
+	.bg-col(@trans);
+	.no-rounded;
+	border: 2px solid @wht;
+	color: @wht;
+		&:hover, &:active, &:focus {
+		.bg-col(@wht);
+		color: @blue;
+		}	
+	}	
+}
+
+#location-map {
+.h(35);		
+}
