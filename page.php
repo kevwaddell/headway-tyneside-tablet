@@ -14,11 +14,14 @@
 				<div class="entry">
 				<?php if ( has_post_thumbnail() || !empty($sb_imgs)) { 
 				$post_thumbnail_id = get_post_thumbnail_id();
+				$feat_img = wp_get_attachment_image_src($post_thumbnail_id, array(750,750) );
+				if ($feat_img[1] < $feat_img[2]) {
 				$feat_img = wp_get_attachment_image_src($post_thumbnail_id, array(350,350) );	
-				//echo '<pre class="debug">';print_r($feat_img);echo '</pre>';
+				}	
+				//echo '<pre class="debug">';print_r($sb_imgs);echo '</pre>';
 				?>
 				<div class="row">
-					<div class="col-xs-4 page-sb">
+					<div class="<?php echo ($feat_img[1] < $feat_img[2] || !empty($sb_imgs)) ? 'col-xs-3 col-xs-push-9 ':'' ?>col-md-4 col-md-push-8 page-sb">
 						<figure class="feat-img">
 							<img src="<?php echo $feat_img[0]; ?>" class="img-responsive">	
 						</figure>
@@ -35,7 +38,7 @@
 						<?php } ?>			
 						<?php } ?>
 					</div>
-					<div class="col-xs-8">
+					<div class="<?php echo ($feat_img[1] < $feat_img[2] || !empty($sb_imgs)) ? 'col-xs-9 col-xs-pull-3 ':'' ?>col-md-8 col-md-pull-4">
 				<?php } ?>
 				<?php the_content(); ?>
 				<?php if ( has_post_thumbnail() ) { ?>

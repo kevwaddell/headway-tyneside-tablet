@@ -1,11 +1,16 @@
 section.page-section {
 padding-top: 20px;
 padding-bottom: 20px;
-border-bottom: 1px solid @gray;
+border-top: 1px solid @gray;
+background-color: @wht;
 	
-	h2 {
-	margin-top: 0px;
-	margin-bottom: 20px;
+	.section-header {
+		h2 {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		font-size: 30px;
+		line-height: 35px;
+		}	
 	}
 	
 	&.post-grid {
@@ -70,7 +75,7 @@ border-bottom: 1px solid @gray;
 	overflow: hidden;
 		.grid-item {
 		padding: 20px 100px 20px 120px;
-		margin: 30px 15px;
+		margin: 30px 0px;
 		.drop-shadow(0, 3px, 10px, 0.5);
 		position: relative;	
 		overflow: hidden;
@@ -220,6 +225,7 @@ border-bottom: 1px solid @gray;
 }
 
 #contact-section {
+.bg-col(@wht);
 	
 	textarea {
 	.h(4.6);	
@@ -270,8 +276,9 @@ border-bottom: 1px solid @gray;
 .bg-col(@gray);
 color: @wht;
 border-bottom: none;
+padding: 30px 15px;
 	.get-in-touch-box {
-	margin: 0px 15px;
+	//margin: 0px 15px;
 	.bg-col(@blue-lt);
 	padding: 50px;	
 	}	

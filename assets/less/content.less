@@ -24,7 +24,7 @@ margin: auto;
 
 article.page-content {
 	margin: 0px;
-	min-height: 500px;
+	min-height: 300px;
 	.bg-col(@wht);
 	header.page-title {
 	.bg-col(@blue-lt);
@@ -67,11 +67,13 @@ article.page-content {
 	h3 {
 	.font-size(3);
 	.line-h(3.5);	
+	color: @blue-lt;
 	}
 	
 	h4 {
 	.font-size(2);
 	.line-h(2.5);	
+	color: @blue-lt;
 	}
 	
 	p, ul, ol {
@@ -112,15 +114,19 @@ article.page-content {
 	#map {
 	margin-top: 25px;
 	.h(35);	
+	margin-bottom: 15px;		
+			
 	}
 	
 	figure.feat-img {
 	.animated;
 	.fadeInLeft;
-	margin-top: 25px;	
+	margin-top: 20px;	
 	position: relative;
 		img {
-		width: 100%;	
+		max-width: 100%;	
+		max-height: 400px;
+		border: 1px solid black;
 		}
 		.caption {
 		padding-top: 10px;
@@ -129,9 +135,6 @@ article.page-content {
 		.font-size(1.8);
 		.line-h(2.6);
 		color: @grayDk;
-		}
-		&.post-img {
-		.fadeInRight;	
 		}
 		
 		&.sml-img {
@@ -157,16 +160,28 @@ article.page-content {
 		}
 	}
 	
-	.table {
-	margin-top: 15px;	
+	.col-xs-push-9, .col-md-push-9 .col-xs-push-8, .col-md-push-8 {
+		figure.feat-img {
+		.fadeInRight;	
+		}
+	}
+	
+	.well {
+	border-color: @blue;
+	margin-top: 20px;
+		h3, h2 {
+		margin-top: 0px;	
+		color: @blue-lt;
+		}	
 	}
 }
 
 .post-paging {
-.font-size(1.6);
-.line-h(1.6);
+.font-size(2);
+.line-h(2);
 .text-center;
 padding: 20px 0px;
+border-top: 1px solid @gray;
 	a {
 	color: @blue;	
 		&.prev {

@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26148",
 "files": {
+	"\/archive-hw_events.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/archive-hw_events.php",
+		"oF": 0
+		},
 	"\/assets\/css\/img\/header-logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -203,6 +210,41 @@
 		"oAP": "\/inc\/functions\/tablet-theme-init.php",
 		"oF": 0
 		},
+	"\/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/index.php",
+		"oF": 0
+		},
+	"\/page-templates\/contact-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-templates\/contact-page.php",
+		"oF": 0
+		},
+	"\/page-templates\/courses-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-templates\/courses-page.php",
+		"oF": 0
+		},
+	"\/page-templates\/events-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-templates\/events-page.php",
+		"oF": 0
+		},
+	"\/page-templates\/team-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-templates\/team-page.php",
+		"oF": 0
+		},
 	"\/page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -215,6 +257,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/parts\/global\/contact-form.php",
+		"oF": 0
+		},
+	"\/parts\/global\/support-box.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/parts\/global\/support-box.php",
 		"oF": 0
 		},
 	"\/parts\/home-page\/events-updates.php": {
@@ -248,6 +297,20 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/single-hw_events.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/single-hw_events.php",
+		"oF": 0
+		},
+	"\/single.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/single.php",
+		"oF": 0
 		},
 	"\/style.css": {
 		"aP": 1,
