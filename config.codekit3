@@ -538,6 +538,13 @@
 		"oAP": "\/parts\/global\/support-box.php",
 		"oF": 0
 		},
+	"\/parts\/home-page\/banner-hp.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/parts\/home-page\/banner-hp.php",
+		"oF": 0
+		},
 	"\/parts\/home-page\/events-updates.php": {
 		"cB": 0,
 		"ft": 8192,
