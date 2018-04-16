@@ -2,6 +2,7 @@
 
 	<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
 		<?php
+		$diary_pg = get_page_by_path( 'diary' );
 		$sb_imgs = get_field( 'sb_imgs' );	
 		$cats = wp_get_post_terms($post->ID, 'event_category');
 		$cat_title = get_term_field('name', $cats[0]->term_id);
@@ -24,7 +25,7 @@
 		<article <?php post_class("page-content"); ?>>
 			<header class="page-title">
 				<div class="container-fluid">
-					<h1><?php echo $cat_title;  ?></h1>
+					<h1><?php echo get_the_title($diary_pg->ID); ?> - <?php echo $cat_title;  ?></h1>
 				</div>
 			</header>
 			<div class="container-fluid">
