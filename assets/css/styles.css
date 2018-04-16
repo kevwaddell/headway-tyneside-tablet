@@ -280,9 +280,11 @@ h4 {
 }
 .banner-hp .caption {
   position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
+  max-width: 500px;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -57px;
   padding: 10px 20px;
   background-color: #193441;
   background-color: rgba(25, 52, 65, 0.7);
@@ -291,10 +293,10 @@ h4 {
 }
 .banner-hp .caption h3 {
   margin-top: 0px;
-  font-size: 25px;
+  font-size: 30px;
 }
 .banner-hp .caption p {
-  font-size: 16px;
+  font-size: 20px;
 }
 .banner-hp .caption p br {
   display: none;
