@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
-	<?php if ($_SERVER['SERVER_NAME']=='http://www.headwaytyneside.com') { ?>
+	<?php if ($_SERVER['SERVER_NAME']=='www.headwaytyneside.com') { ?>
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -22,7 +22,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php if ($_SERVER['SERVER_NAME']=='http://www.headwaytyneside.com') { ?>
+<?php if ($_SERVER['SERVER_NAME']=='www.headwaytyneside.com') { ?>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRQV2XS"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
