@@ -45,7 +45,7 @@ Template Name: Regular Meetings Page
 			?>
 		<?php if ($sg_meeting_active || $ps_meeting_active || $sc_meeting_active) { ?>
 		<section id="meetings-section" class="page-section events-list">
-			<div class="container">
+			<div class="container-fluid">
 			<header class="section-header">
 				<h2><i class="fa fa-users fa-lg text-muted"></i> <?php the_title(); ?></h2>
 			</header>
