@@ -510,6 +510,20 @@
 		"oAP": "\/page-templates\/events-page.php",
 		"oF": 0
 		},
+	"\/page-templates\/meetings-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-templates\/meetings-page.php",
+		"oF": 0
+		},
+	"\/page-templates\/newsletters-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-templates\/newsletters-page.php",
+		"oF": 0
+		},
 	"\/page-templates\/team-page.php": {
 		"cB": 0,
 		"ft": 8192,
