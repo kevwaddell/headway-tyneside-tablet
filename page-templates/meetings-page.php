@@ -114,7 +114,7 @@ Template Name: Regular Meetings Page
 					<div class="title"><?php echo $meeting_title; ?></div>
 					<?php if ($date_type == 'repeat') { ?>
 					<div class="frequency"><?php echo $frequency; ?> <?php echo $now_yr; ?></div>	
-					<div class="date">Date(s):<br><?php echo implode('<br>', $dates); ?></div>
+					<div class="date">Date<?php echo (count($dates) > 1) ? '(s):<br>':': '; ?><?php echo implode('<br>', $dates); ?></div>
 					<div class="time">Time: <?php echo $meeting_time; ?></div>			
 					<?php } ?>
 					<?php if ($date_type == 'single') { ?>
